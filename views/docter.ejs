@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="head_title">
+        <p style="font-size: 30px;color: rgb(9, 240, 240);">TRUSTED CARE</p>
+    <h3 style="font-size: 50px;color: #1F2B6C;">Our Doctors</h3>
+    </div>
+    <div class="row" style="padding-left: 70px;">
+        <% doctors.forEach(dr => { %>
+          <div class="col-lg-4 col-md-4 mb-4">
+            <div class="card" style="width: 18rem;">
+              <a class="card-img-top" href=""><img class="card-img-top" src="/img/user/<%= dr.DrrImg%>"></a>
+              <div class="card-body" style="background-color: #85A9CD;">
+                <h6 class="card-title" style="color: #1F2B6C;"><%=dr.DrName%></h6>
+                <p class="card-text" style="color: #1F2B6C; letter-spacing: 2px;font-weight: bold;"><b>NEUROLOGY</b></p>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+    </div> 
+</div>

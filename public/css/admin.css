@@ -1,0 +1,30 @@
+#btnAd{
+    background: #159EEC;
+    margin-top: 10px;
+    border: 1px solid #159EEC;
+    border-radius: 19px;
+    width: 90px;
+    margin-right: 10px;
+}
+#btnAd:hover{
+    background-color: #ccc;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+}
+#btnAdPass{
+    background: #ccc;
+}
+#btndel{
+    background: #FF5757;
+    margin-top: 10px;
+    border: 1px solid #FF5757;
+    border-radius: 19px;
+    width: 90px;
+}
+#btndel:hover{
+    background-color: #ccc;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+}

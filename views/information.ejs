@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        /* form information */
+form{
+    width: 600px;
+}
+.box{
+    width: 800px;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+    margin-left: 20%;
+    color: #454545;
+}
+html::-webkit-scrollbar{
+    width: 50px;
+    background:white;
+}
+#Check1{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+.btn{
+    width: 200px !important;
+    height: 40px;
+    cursor: pointer;
+}
+.btn1{
+    background: #003882;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 80px;
+    color: white;
+}
+.btn2{
+    background: #A1BDE3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 80px;
+    color: #003882;
+}
+.popup{
+    width: 400px;
+    background-color: #ffff;
+    border-radius: 5px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                   <form >
+                    <div class="form-group row mb-3">
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center">
+                            <img src="/img/allpic/logoouttext.png" style="width: 100px;">
+                        </label>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center" style="text-align: center; color: #5F5858;">
+                            เอกสารแสดงความยินยอม (Consent Form) <br>
+                            การเก็บรวบรวม ประมวลผล ใช้ และ/หรือเปิดเผยข้อมูลส่วนบุคคล
+                        </label>
+                        <br>
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center" style="color: #5F5858;text-indent: 50px;">
+                            ทาง HEALJAI มีมาตรการปกป้องข้อมูลส่วนบุคคลโดยการจำกัดสิทธิ์ <br>
+                            การเข้าถึงข้อมูลส่วนบุคคลให้สามารถเข้าถึงได้เฉพาะเจ้าหน้าที่ที่ดูแลระบบบุคคล 
+                            ที่มีอำนาจหน้าที่หรือได้รับมอบหมายที่มีความจำเป็นต้องใช้ข้อมูลดังกล่าวตาม 
+                            วัตถุประสงค์ที่ได้แจ้งไว้แล้วเท่านั้นซึ่งบุคคลดังกล่าวจะต้องยึดมั่นและปฏิบัติตาม 
+                            มาตรการปกป้องข้อมูลส่วนบุคคลอย่างเคร่งครัด ตลอดจนการรักษาความมั่นคง 
+                            ปลอดภัยของข้อมูลส่วนบุคคล โดยเฉพาะการเก็บรวบรวม ประมวลผล ใช้และ/หรือ 
+                            เปิดเผย ข้อมูลส่วนบุคคลของผู้สมัครใช้งานรวมถึงแนวทางในการปฏิบัติตาม 
+                            พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ.2562และกฎหมายที่เกี่ยวข้องกับข้อมูล 
+                            ส่วนบุคคล ทั้งนี้เพื่อให้ผู้เข้าใช้รับทราบ และเข้าใจถึงการคุ้มครองข้อมูลส่วนบุคคล 
+                            ดังต่อไปนี้ 
+                        </label>
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center" style="color: #5F5858;">
+                            <b>
+                                1 การให้ข้อมูลเพื่อตรวจสอบ <br>    
+                                วิเคราะห์และประเมินผลข้อมูลส่วนบุคคลที่สถาบันฯ ได้จัดเก็บ
+                            </b>
+                        </label>
+                        
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center">
+                            <img src="/img/allpic/information.png" style="width: 100%;padding: 0;">
+                        </label>
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center" style="color: #5F5858;">
+                            <b>
+                                2. ระยะเวลาในการเก็บรวบรวมข้อมูลส่วนบุคคลของท่าน
+                            </b>
+                        </label>
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center" style="color: #5F5858;">
+                            HEALJAIจะเก็บรักษาข้อมูลส่วนบุคคลของท่านไว้ในระยะเวลาเท่าที่ข้อมูลนั้นยังมี
+                            ความจำเป็นตามวัตถุประสงค์ในการเก็บรวบรวมข้อมูลเท่านั้น ตามรายละเอียด
+                            ที่ได้กำหนดไว้ในนโยบาย ประกาศหรือตามกฎหมายที่เกี่ยวข้อง ทั้งนี้เมื่อพ้นระยะ
+                            เวลา และข้อมูลส่วนบุคคลของท่านสิ้นความจำเป็นตามวัตถุประสงค์ดังกล่าวแล้ว 
+                            จะทำการลบ ทำลายข้อมูลส่วนบุคคลของท่านหรือทำให้ข้อมูลส่วนบุคคลของท่าน
+                            ไม่สามารถระบุตัวตนได้ต่อไป ตามรูปแบบและมาตรฐานการลบทำลายข้อมูล
+                            ส่วนบุคคล ที่คณะกรรมการหรือกฎหมายจะได้ประกาศกำหนดหรือตามมาตรฐาน
+                            สากล อย่างไรก็ดี ในกรณีที่มีข้อพิพาทการใช้สิทธิหรือคดีความอันเกี่ยวข้องกับ
+                            ข้อมูลส่วนบุคคลของท่าน HEALJAI ขอสงวนสิทธิในการเก็บรักษาข้อมูลนั้นต่อไป
+                            จนกว่าข้อพิพาทนั้นจะได้มีคำสั่งหรือคำพิพากษาถึงที่สุด
+                        </label>
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center" style="text-align: center;">
+                            <input type="checkbox" class="form-check-input" id="check" style="margin-right: 10px;">
+                            <label class="form-check-label">ข้าพเจ้าได้อ่าน และตกลงยินยอมตามรายละเอียดข้อตกลง <br> และความยินยอมข้างต้น</label>
+                        </label>
+                        <label class="col-sm-12 col-form-label d-flex justify-content-center" style="text-align: center;">
+                           <button id="subbtn1"  class="btn btn1" disabled><b><a href="/login" style="text-decoration: none; color: white;">ยอมรับ</a></b></button>
+                        </label>
+                
+                    </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="/js/scrip.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>

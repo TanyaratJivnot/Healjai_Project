@@ -1,0 +1,84 @@
+#form{
+    width: 600px;
+}
+#formR{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+#formR1{
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 1000px;
+}
+.box{
+    width: 800px;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+    margin-left: 20%;
+    color: #454545;
+}
+
+#head{
+    background: #262A56;
+    border-radius: 30px 30px 0px 0px;
+    height: 150px;
+}
+#container{
+    margin: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #AFD3E2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+#head1{
+    left: 327px;
+    top: 778px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 30px 30px;
+}
+#checkBox{
+    background: #B8E0E2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 55px;
+}
+.btn{
+    background-color: #091353;
+    opacity: 0.8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 80px;
+    width: 180px;
+    height: 50px;
+}
+#btnC ,#btnE{
+    width: 200px;
+    height: 80px;
+    text-decoration: none;
+    padding-top: 20px;
+    color: white;
+    border: none;
+}
+#btnC{
+    background: #159EEC;
+}
+#btnC:hover{
+    background: #DDDDDD;
+    transition: .5s;
+    cursor: pointer;
+}
+#btnE{
+    background-color: #E74646;
+}
+#btnE:hover{
+    background: #DDDDDD;
+    transition: .5s;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    margin-top: 5px;
+  }

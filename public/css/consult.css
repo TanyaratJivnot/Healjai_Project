@@ -1,0 +1,22 @@
+.btnP{
+    background: #4ba1da;
+    border-radius: 8px;
+    width: 250px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.btnP:hover{
+    background-color: #cccc;
+    color: white;
+}
+.card{
+    border-radius: 5px;
+}
+.card:hover{
+    filter: drop-shadow(-5px -4px 17px rgba(173, 172, 173, 0.22));
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
